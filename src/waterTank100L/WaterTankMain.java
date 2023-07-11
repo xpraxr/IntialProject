@@ -5,8 +5,8 @@ public class WaterTankMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		FillToCapacityMechanism ftcm = new FillToCapacityMechanism();
-		ftcm.tenLitreAdd();
+		FillToCapacityMechanism fillToCapacityMechanism = new FillToCapacityMechanism();
+		fillToCapacityMechanism.tenLitreAdd();
 	}
 
 }

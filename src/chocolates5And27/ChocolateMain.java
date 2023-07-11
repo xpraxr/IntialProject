@@ -5,8 +5,8 @@ public class ChocolateMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MechanismChocolateAddition mca = new MechanismChocolateAddition();
-		mca.fiveChocolateAdd();
+		MechanismChocolateAddition mechanismChocolateAddition = new MechanismChocolateAddition();
+		mechanismChocolateAddition.fiveChocolateAdd();
 
 	}
 }

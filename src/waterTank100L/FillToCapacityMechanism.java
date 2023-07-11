@@ -2,18 +2,21 @@ package waterTank100L;
 
 public class FillToCapacityMechanism {
 
-	byte begin, count;
-	byte add = 10;
+	int initialAmountOfWater, count;
+	int bucketCapacity = 10;
+	int tankCapacity = 100;
+	int actualTankCapacity = tankCapacity - 5;
 
 	void tenLitreAdd() {
-		while (begin <= 100) {
-			begin += 10;
-			if (begin > 100) {
+		while (initialAmountOfWater <= actualTankCapacity) {
+			initialAmountOfWater += bucketCapacity;
+			if (initialAmountOfWater > actualTankCapacity) {
 				System.out.println("The Tank is full now!!");
 				break;
 			}
-			count += 1;
-			System.out.println(count + " bucket of 10L added, having total of " + begin + "L water in the WaterTank ");
+			count++;
+			System.out.println(count + " bucket of " + bucketCapacity + "L added, having total of " + initialAmountOfWater
+					+ "L water in the WaterTank ");
 		}
 
 	}

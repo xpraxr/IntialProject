@@ -2,25 +2,28 @@ package chocolates5And27;
 
 public class MechanismChocolateAddition {
 
-	byte begin = 27;
-	byte add = 5;
-	byte count, total;
+	byte initialAmountOfChocolate = 27;
+	byte noOfChocolatesAdded = 5;
+	byte count, totalChocolatesadded;
+	byte chocolateBoxLimit = 63;
 
 	void fiveChocolateAdd() {
-		while (begin <= 63) {
-			total = begin;
-			begin += 5;
+		while (initialAmountOfChocolate <= chocolateBoxLimit) {
+			totalChocolatesadded = initialAmountOfChocolate;
+			initialAmountOfChocolate += noOfChocolatesAdded;
 
-			if (begin > 63) {
-				System.out.println("The next set of 5 chocolates leads to " + begin
-						+ " chocoltes in total, but can't be added since it exceeds the limit 63");
+			if (initialAmountOfChocolate > chocolateBoxLimit) {
+				System.out.println("The next set of " + noOfChocolatesAdded + " chocolates leads to "
+						+ initialAmountOfChocolate
+						+ " chocoltes in total, but can't be added since it exceeds the limit " + chocolateBoxLimit);
 				break;
 			}
 
 			count += 1;
 
-			System.out.println(count + " round chocolates added, leaving " + begin + " in total in the box");
+			System.out.println(
+					count + " round chocolates added, leaving " + initialAmountOfChocolate + " in total in the box");
 		}
-		System.out.println("Total Chocoltes added:" + total);
+		System.out.println("Total Chocoltes added:" + totalChocolatesadded);
 	}
 }
