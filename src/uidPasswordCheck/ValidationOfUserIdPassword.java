@@ -27,11 +27,9 @@ public class ValidationOfUserIdPassword {
 			if (defaultUserId.equals(inputUserId) && (defaultPassword.equals(inputPassword))) {
 				System.out.println("You are logged in to the application");
 				break;
-
 			} else if (count < chancesToTry) {
 				System.out.println(chancesToTry - count + " Try left");
 				System.out.println("Incorrect User id or password. Try again");
-
 			} else
 				System.out.println("Account locked");
 		}

@@ -18,9 +18,7 @@ public class MechanismChocolateAddition {
 						+ " chocoltes in total, but can't be added since it exceeds the limit " + chocolateBoxLimit);
 				break;
 			}
-
 			count += 1;
-
 			System.out.println(
 					count + " round chocolates added, leaving " + initialAmountOfChocolate + " in total in the box");
 		}

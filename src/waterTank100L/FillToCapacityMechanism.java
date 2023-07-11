@@ -15,8 +15,8 @@ public class FillToCapacityMechanism {
 				break;
 			}
 			count++;
-			System.out.println(count + " bucket of " + bucketCapacity + "L added, having total of " + initialAmountOfWater
-					+ "L water in the WaterTank ");
+			System.out.println(count + " bucket of " + bucketCapacity + "L added, having total of "
+					+ initialAmountOfWater + "L water in the WaterTank ");
 		}
 
 	}
