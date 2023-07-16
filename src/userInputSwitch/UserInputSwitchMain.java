@@ -9,7 +9,7 @@ public class UserInputSwitchMain {
 
 		ArithmeticOperation arithmeticOperation = new ArithmeticOperation();
 		arithmeticOperation.oprationOfChoice();
-		
+
 	}
 
 }

@@ -3,39 +3,26 @@ package userInputSwitch;
 import java.util.Scanner;
 
 public class ArithmeticOperation {
-	
-	
+
 	int value1, value2, finalValue;
 	Scanner scanner = new Scanner(System.in);
 
 	void addition() {
-		System.out.print("Enter value 1 & value 2: ");
-		value1 = scanner.nextInt();
-		value2 = scanner.nextInt();
 		finalValue = value1 + value2;
 		System.out.println("Final Value: " + finalValue);
 	}
 
 	void subtraction() {
-		System.out.print("Enter value 1 & value 2: ");
-		value1 = scanner.nextInt();
-		value2 = scanner.nextInt();
 		finalValue = value1 - value2;
 		System.out.println("Final Value: " + finalValue);
 	}
 
 	void multiply() {
-		System.out.print("Enter value 1 & value 2: ");
-		value1 = scanner.nextInt();
-		value2 = scanner.nextInt();
 		finalValue = value1 - value2;
 		System.out.println("Final Value: " + finalValue);
 	}
 
 	void quotient() {
-		System.out.print("Enter value 1 & value 2: ");
-		value1 = scanner.nextInt();
-		value2 = scanner.nextInt();
 		if (value2 != 0) {
 			finalValue = value1 / value2;
 			System.out.println("Final Value: " + finalValue);
@@ -44,9 +31,6 @@ public class ArithmeticOperation {
 	}
 
 	void reminder() {
-		System.out.print("Enter value 1 & value 2: ");
-		value1 = scanner.nextInt();
-		value2 = scanner.nextInt();
 		if (value2 != 0) {
 			finalValue = value1 / value2;
 			System.out.println("Final Value: " + finalValue);
@@ -61,6 +45,10 @@ public class ArithmeticOperation {
 					+ "'%' for reminder & " + "'Q' to Quit :");
 
 			userInput = scanner.next();
+
+			System.out.print("Enter value 1 & value 2: ");
+			value1 = scanner.nextInt();
+			value2 = scanner.nextInt();
 
 			switch (userInput) {
 			case "+":
